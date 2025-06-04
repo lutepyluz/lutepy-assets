@@ -1,47 +1,45 @@
 :root{
-  /* Cambia el color primario a tu tono corporativo */
+  /* Color corporativo principal */
   --lutepy-primary:#d2598a;
 }
 
-/* ---------- Layout base ---------- */
-body{
+/* ------------------------------------------------------------------
+   Limita TUTTO agli elementi dentro .lutepy-calculator per non toccare
+   altre parti del tema di Blogger (cabecera, sidebar, ecc.).
+------------------------------------------------------------------*/
+.lutepy-calculator{
   font-family:Arial,Helvetica,sans-serif;
-  margin:0;
-  padding:0;
-  background:#fdfdfd;
   color:#333;
-}
-
-.container{
-  max-width:600px;
-  margin:0 auto;
+  background:#fdfdfd;
   padding:1rem;
+  margin:0 auto;
+  max-width:600px; /* se vuoi 100% elimina questa riga */
 }
 
-/* ---------- Logo ---------- */
-#logo{
+/* -------------------- Logo -------------------- */
+.lutepy-calculator #logo{
   display:block;
   margin:0 auto 1rem;
-  max-width:150px; /* Override según necesites */
+  max-width:150px; /* Ajusta si necesario */
   width:40%;
   height:auto;
 }
 
-/* ---------- Tipografía ---------- */
-h1{
+/* ------------------ Tipografía ---------------- */
+.lutepy-calculator h1{
   text-align:center;
   color:var(--lutepy-primary);
 }
 
-label{
+.lutepy-calculator label{
   display:block;
   margin-top:1rem;
   font-weight:600;
 }
 
-/* ---------- Campos ---------- */
-select,
-input[type="number"]{
+/* -------------------- Campos ------------------ */
+.lutepy-calculator select,
+.lutepy-calculator input[type="number"]{
   width:100%;
   padding:.5rem;
   border:1px solid #ccc;
@@ -49,12 +47,10 @@ input[type="number"]{
   box-sizing:border-box;
 }
 
-input.error{
-  border-color:red;
-}
+.lutepy-calculator input.error{border-color:red;}
 
-/* ---------- Botón ---------- */
-button{
+/* -------------------- Botón ------------------- */
+.lutepy-calculator button{
   margin-top:1.5rem;
   width:100%;
   padding:.75rem 1rem;
@@ -67,12 +63,10 @@ button{
   transition:opacity .2s ease-in-out;
 }
 
-button:hover{
-  opacity:.9;
-}
+.lutepy-calculator button:hover{opacity:.9;}
 
-/* ---------- Resultado ---------- */
-.result{
+/* ------------------ Resultado ----------------- */
+.lutepy-calculator .result{
   margin-top:1.5rem;
   font-size:1.25rem;
   font-weight:700;
@@ -80,9 +74,9 @@ button:hover{
   color:var(--lutepy-primary);
 }
 
-/* ---------- Responsive grid ---------- */
+/* -------------- Responsive grid --------------- */
 @media (min-width:600px){
-  .grid{
+  .lutepy-calculator .grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:1rem;
