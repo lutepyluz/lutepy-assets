@@ -1,0 +1,14 @@
+window.LUTEPY_LOCALE_IT = {
+  help: 'Aiuto',
+  projectDetails: 'Dettagli del Progetto',
+  step1: '1. Dettagli del Progetto',
+  step2: '2. Misure del Progetto (cm)',
+  step3: '3. Filato e Lavorazione',
+  result: 'Risultato del Calcolo',
+  totalSurface: 'Superficie totale stimata',
+  yarnWeight: 'Peso totale filato',
+  skeinsNeeded: 'Gomitoli necessari',
+  newProject: 'Nuovo Progetto / Taglia Diversa',
+  sameProject: 'Stesso Progetto, Filato Diverso',
+  langLabel: 'Lingua',
+};
